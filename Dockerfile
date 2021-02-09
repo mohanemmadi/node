@@ -1,6 +1,7 @@
-FROM node:12
+FROM node:alpine
 WORKDIR /usr/src/app
 COPY package*.json ./
 COPY ./ /usr/src/app
 RUN npm install
-CMD npm start
+CMD ["npm","start"]
+Expose 3000
