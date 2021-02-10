@@ -1,10 +1,8 @@
 FROM node:alpine
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app1
 COPY package*.json ./
-COPY ./ /usr/src/app
-RUN npm install --silent
-RUN npm uninstall jade --save
-RUN  npm install pug --save
+COPY ./ /usr/src/app1
+RUN npm install
 CMD ["npm","start"]
 Expose 3000
 
