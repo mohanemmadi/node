@@ -5,3 +5,4 @@ COPY ./ /usr/src/app
 RUN npm install
 CMD ["npm","start"]
 Expose 3000
+
