@@ -1,8 +1,8 @@
 FROM node:alpine
-WORKDIR /usr/src/app1
+WORKDIR /usr/src/yuga
 COPY package*.json ./
-COPY ./ /usr/src/app1
-RUN npm install -g pm2
+COPY ./ /usr/src/yuga
+RUN npm install
 CMD ["npm","start"]
 Expose 3000
 
