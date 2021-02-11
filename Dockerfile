@@ -3,6 +3,6 @@ WORKDIR /usr/src/yuga
 COPY package*.json ./
 COPY ./ /usr/src/yuga
 RUN npm install
-CMD ["npm","start"]
+ENTRYPOINT ["npm","start"]
 Expose 3000
 
