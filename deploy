@@ -1,0 +1,8 @@
+-#!/bin/sh     
+ssh ubuntu@172.31.2.177 <<EOF       
+ cd /home/ubuntu/nodejs-register-login
+ git pull      
+ npm install --production      
+ pm2 restart all
+ exit      
+EOF
