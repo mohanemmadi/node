@@ -3,7 +3,7 @@ ssh ubuntu@172.31.17.230 <<EOF
  cd ~/nodejs
  git pull https://github.com/mohanemmadi/node.git
  npm install --production 
- pm2 start all
+ pm2 restart all
 exit
 EOF
  
