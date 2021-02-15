@@ -1,8 +1,7 @@
 -#!/bin/sh     
 ssh ubuntu@172.31.17.230 <<EOF       
- cd /var/lib/jenkins/workspace/nodejs
- git pull      
- npm install --production      
+ cd /var/lib/jenkins/workspace/nodejs 
+ npm install       
  pm2 restart all
  exit      
 EOF
