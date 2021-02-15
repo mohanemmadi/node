@@ -4,6 +4,7 @@ ssh ubuntu@172.31.17.230 <<EOF
  git pull https://github.com/mohanemmadi/node.git
  npm install --production 
 pm2 restart all
+pm2 start --no-daemon app.js
 exit
 EOF
  
