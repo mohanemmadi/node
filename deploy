@@ -1,6 +1,6 @@
 -#!/bin/sh     
-ssh ubuntu@172.31.17.230 <<EOF       
- cd /nodejs
+ssh ubuntu@172.31.2.177 <<EOF       
+ cd /deploy
  git pull      
  npm install --production      
  pm2 restart all
