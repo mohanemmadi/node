@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh ubuntu@172.31.2.177 <<EOF
+ssh -t -t ubuntu@172.31.2.177 <<EOF
  cd ~/nodejs
  git pull https://github.com/mohanemmadi/node.git
  npm install --production 
