@@ -3,7 +3,7 @@ ssh -t -t ubuntu@172.31.2.177 <<EOF
  cd ~/node
  git clone https://github.com/mohanemmadi/node.git
  sudo apt install npm -y
- npm install /usr/bin/npm production
+ npm install /usr/bin/node production
  pm2 restart all 
 exit
 EOF
