@@ -1,7 +1,7 @@
 #!/bin/sh
 ssh -t -t ubuntu@172.31.2.177 <<EOF
  cd ~/deploy
- git pull https://github.com/mohanemmadi/node.git
+ git clone https://github.com/mohanemmadi/node.git
  npm install — production  
  pm2 restart all
 exit
